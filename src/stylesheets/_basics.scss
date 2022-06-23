@@ -1,0 +1,21 @@
+$bgColor: #f4513d;
+$color: #f2da5b;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Jolly Lodger', cursive;
+}
+
+body {
+  background-color: $bgColor;
+  color: var(--black);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

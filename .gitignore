@@ -1,0 +1,16 @@
+.DS_Store
+yarn-error.log
+/node_modules
+/build
+/dev_build/*.html
+/dev_build/*.css
+/dev_build/*.js
+/dev_build/*.png
+/dev_build/*.jpg
+/dev_build/*.jpeg
+/dev_build/*.gif
+/dev_build/*.svg
+/dev_build/*/*.*
+
+#IDE
+/.idea/

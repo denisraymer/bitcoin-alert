@@ -1,0 +1,66 @@
+@import "basics";
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.course {
+  color: $color;
+  font-size: 7em;
+  text-align: center;
+  text-shadow: 0 4px 0 #000,
+  -2px -2px 0 $bgColor,
+  -3px -3px 0 $color;
+  position: relative;
+}
+
+.course.rattle {
+  -webkit-animation: rattle 0.08s infinite alternate;
+}
+
+.course-list {
+  text-align: center;
+  position: absolute;
+  top: 112px;
+
+  .course-list-item {
+    font-size: var(--size);
+    text-shadow: 0 4px 0 #000,
+    -2px -2px 0 $bgColor,
+    -3px -3px 0 $color;
+    color: $color;
+    margin: 10px 0;
+  }
+}
+
+@-webkit-keyframes rattle {
+  0% {
+    -webkit-transform: translateX(-2px);
+    letter-spacing: -0.012em;
+  }
+
+  25% {
+    -webkit-transform: translateY(-2px) rotate(-1deg);
+    font-size: 6.9999em;
+  }
+
+  50% {
+    -webkit-transform: translateX(1px);
+    text-shadow: 0 1px 0 #000,
+    1px 1px 0 $bgColor,
+    2px 2px 0 $color,
+    -3px -5px 0 $bgColor,
+    -4px -6px 0 rgba($color, 0.6);
+  }
+
+  75% {
+    -webkit-transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-2px);
+  }
+}
