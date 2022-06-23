@@ -76,7 +76,6 @@ function setContentAnimatedClass(htmlElement) {
   htmlElement.classList.add('rattle')
   audio.load()
   audio.play().then()
-  audio.pause()
 
   setTimeout(() => {
     htmlElement.classList.remove('rattle')
